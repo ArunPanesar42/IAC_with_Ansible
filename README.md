@@ -17,6 +17,8 @@ Ansible is an open-source
 - It is **Agentless** - makes it lightweight on agent nodes, no need to install in agent notes
 - It is **Secure** - uses SSH to connect to other servers
 
+#### Diagram 
+![ansible_diagram](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/Images/Ansible_diagram.png?raw=true)
 ### Commands for Ansible
 - ``ansible all -m ping``
 - ``ansible web -a "uname -a"``
