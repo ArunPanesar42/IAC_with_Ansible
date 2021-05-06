@@ -86,11 +86,17 @@ Adhoc commands can be used to run commands in other servers from the Ansible con
 - ``ansible all -m shell -a "sudo apt-get update -y"`` - update Linux on all machines
 - ``ansible all -m shell -a "sudo apt-get upgrade -y"`` - upgrade Linux on all machines
 
-### Playbooks
+## Playbooks
 - Playbooks are configuration files used to run commands that are often used.
 - Same location as the hosts file (/etc/ansible)
 - **Indentation is VERY important when using Ansible**
 
-#### Making playbook files:
+### Making playbook files:
 ``sudo nano install_nginx.yml`` - we use this command to create a YAML file, in this case we are installing Nginx
 ``ansible-playbook install_nginx.yml`` - run the YAML file
+
+## Our IAC using AWS
+### Diagram 
+![IAC_aws](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/Images/Diagram%206may.png?raw=true)
+### Scaling features with AWS
+
