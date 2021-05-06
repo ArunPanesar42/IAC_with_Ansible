@@ -49,7 +49,10 @@ Ansible is an open-source software that includes:
 - It is **Efficient** - Integrates with other tools, We can change provider very easily.
 
 #### Diagram 
+- **Diagram of Ansible flow**
 ![ansible_diagram](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/Images/Ansible_diagram.png?raw=true)
+- **Diagram of Our Anisible we are working on**
+![ansible_flow](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/Images/Ansible_flow.png?raw=true)
 
 ## Ad-hoc Commands
 Adhoc commands can be used to run commands in other servers from the Ansible controller.
