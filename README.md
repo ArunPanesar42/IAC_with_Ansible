@@ -1,7 +1,12 @@
 # Infastructure as Code Using Ansible
+- 1.[What is IAC?](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/README.md#what-is-iac)
+- 2.[Ansible](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/README.md#ansible)
+- 3.[Ad-hoc Commands](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/README.md#ad-hoc-commands)
+- 4.[Playbooks](https://github.com/ArunPanesar42/IAC_with_Ansible/blob/main/README.md#playbooks)
 
 ## What is IAC?
-IaC is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools
+- IaC is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools
+- Infrastructure as Code (IaC) uses a high-level descriptive coding language to automate the provisioning of IT infrastructure. This automation eliminates the need for developers to manually provision and manage servers, operating systems, database connections, storage, and other infrastructure elements every time they want to develop, test, or deploy a software application.
 
 ### The types of Infastructure
 - They can be Mutable or Immutable
@@ -73,8 +78,9 @@ Adhoc commands can be used to run commands in other servers from the Ansible con
 - ``ansible web -a "uname -a"`` - find out machince 
 - ``ansible web -a "date"`` - find out date on web server 
 - ``ansible web -a "free -m"`` - display available memory in web server
-- ``ansible web -m shell -a "ls -a"`` - 
-- ``sudo nano hosts``
+- ``ansible web -m shell -a "ls -a"`` - list all files in web server 
+- ``sudo nano hosts`` - This lets us edit the host file with admin permissions 
+
 #### Task
 - ``ansible db -m shell -a "uptime"`` - uptime for the database
 - ``ansible all -m shell -a "sudo apt-get update -y"`` - update Linux on all machines
@@ -83,7 +89,7 @@ Adhoc commands can be used to run commands in other servers from the Ansible con
 ### Playbooks
 - Playbooks are configuration files used to run commands that are often used.
 - Same location as the hosts file (/etc/ansible)
-- **Indentation is VERY important when using Anible**
+- **Indentation is VERY important when using Ansible**
 
 #### Making playbook files:
 ``sudo nano install_nginx.yml`` - we use this command to create a YAML file, in this case we are installing Nginx
